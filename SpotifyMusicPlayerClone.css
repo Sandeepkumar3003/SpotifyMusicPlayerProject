@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins",sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(15, 21, 21);
+    /* To make the box at center we can use */
+    display: grid;
+    place-items: center;
+}
+
+header{
+    width: 85%;
+    height: 95%;
+    /* border: 1px solid aliceblue ; */
+
+    /* we used displace flex to make menu_side and song_side box side by side*/
+
+    display: flex;
+    /* To align or make element to adjust within the header we use flex wrap */
+    flex-wrap: wrap;
+
+}
+
+/* This is for reference while writing code */
+/* 
+header p{
+    color: antiquewhite;
+} */
+
+/* About menu and song sides */
+
+header .menu_side , .song_side{
+    width:25% ;
+    height: 90%;
+    /* border: 1px solid aliceblue ; */
+    background-color: rgba(8, 8, 31, 0.989);
+    box-shadow: 5px 0px 2px #131010;
+    /* Color for playlist or content within the above classes  */
+    color:aliceblue;
+}
+
+/* We again rewrite the width of song_menu */
+
+header .song_side{
+    width:75% ;
+    background-color: rgb(6, 2, 36);
+    
+}
+
+header .master_play{
+    width: 100%;
+    height: 10%;
+    /* background-color: aliceblue; */
+    background-color: rgb(4, 4, 11);
+    box-shadow: 0px 3px 2px #141212;
+
+}
+
+
+/* then we remove borders */
+
+header .menu_side h1{
+    margin: 15px 0px 0px 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* To make palylist related */
+
+header .menu_side .playlist{
+    margin: 40px 0px 0px 20px;
+}
+
+
+header .menu_side .playlist h4{
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 10px;
+    color:darkgray;
+    display: flex;
+    align-items: center;
+    transition: 0.25s linear;
+}
+
+header .menu_side .playlist h4:hover{
+    color:aliceblue
+}
