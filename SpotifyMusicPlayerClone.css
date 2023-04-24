@@ -109,6 +109,10 @@ header .menu_side .playlist h4 span:before{
     transition: 0.3 linear;
 }
 
-header .menu_side .playlist h4:hover span::before{
-    border:2px solid aliceblue ;
-}
+header .menu_side .playlist
+ h4:hover span::before{
+    border:2px solid rgb(179, 190, 199) ; 
+
+
+    
+}  
