@@ -82,7 +82,7 @@ header .menu_side .playlist h4{
     font-size: 14px;
     font-weight: 400;
     padding-bottom: 10px;
-    color:darkgray;
+    color:rgb(97, 94, 94);
     display: flex;
     align-items: center;
     transition: 0.25s linear;
@@ -90,4 +90,25 @@ header .menu_side .playlist h4{
 
 header .menu_side .playlist h4:hover{
     color:aliceblue
+}
+
+header .menu_side .playlist h4 span{
+    position: relative;
+    margin-right: 35px; 
+    /* This will make points(playlist,ListListening,Recommended) to be moved right */
+}
+
+header .menu_side .playlist h4 span:before{
+    content:'';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #4c5262;
+    border-radius: 50%;
+    top: -4px;
+    transition: 0.3 linear;
+}
+
+header .menu_side .playlist h4:hover span::before{
+    border:2px solid aliceblue ;
 }
