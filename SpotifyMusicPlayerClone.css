@@ -111,8 +111,5 @@ header .menu_side .playlist h4 span:before{
 
 header .menu_side .playlist
  h4:hover span::before{
-    border:2px solid rgb(179, 190, 199) ; 
-
-
-    
+    border:2px solid rgb(179, 190, 199) ;     
 }  
